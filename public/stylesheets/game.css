@@ -1,0 +1,195 @@
+.title {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    text-align: center;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.headerField {
+    color:brown;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 600px;
+}
+
+.middlecolumn {
+    float: left;
+    width: 0%;
+    padding: 10px;
+    height: 600px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*#onlinePlayers{
+    margin-left: 10px;
+    margin-right: auto;
+    float: left;
+}*/
+
+/* #yourSteps{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    float: center;
+
+} */
+
+/*#recordSteps{
+    margin-left: auto;
+    margin-right: 10px;
+    float: right;
+}*/
+
+body {
+    background-color: #ffffff;
+}
+
+.button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    }
+                
+.button:hover {
+        background-color: #B7B7B4;
+    }
+
+.placedShip{
+    background: red;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 0px 1px #ffffff inset;
+    float: left;
+    cursor: pointer;
+    pointer-events:none;
+}
+
+.placedShipSurronding {
+    background: #B8B8B9;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 0px 1px #ffffff inset;
+    float: left;
+    cursor: pointer;
+    pointer-events:none;
+}
+
+.yourBoardCell {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 0px 1px #ffffff inset;
+    float: left;
+    cursor: pointer;
+}
+
+.yourBoardCell:hover {
+    background-color: #B7B7B4;
+}
+
+.numberLabel {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.numText { 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.letterLabel {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.letText {
+    position: absolute;
+    line-height: 50px;
+    right: 0;
+    color: black;
+}
+
+.gameBoard {
+    position:relative;
+	margin:0 auto 2em auto;
+    height: 510px;
+    width: 510px;
+}
+
+.gameBoard div {
+    border: 1px solid #ddd;
+	width:50px;
+    height:50px;
+    position:absolute;
+    box-sizing: border-box;
+}
+
+.gameBoard div .letText {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 0px 0px 1px #ffffff inset;
+    float: left;
+    cursor: pointer;
+}
+
+#yourBoard {
+    position: relative;
+    background-color: #ffffff;
+    height: 450px;
+    width: 450px;
+    margin-left: 0;
+    margin-right: auto;
+    float: left;
+}
+
+#Button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    }

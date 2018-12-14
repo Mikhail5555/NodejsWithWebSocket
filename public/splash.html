@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BottleShip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/splash.css"/>
+
+
+</head>
+<body>
+
+<div class="center">
+
+    <div class="title">
+        Welcome to BottleShip
+    </div>
+    <div class="subTitle">
+        A BattleShip Game
+    </div>
+
+
+    <div class="description">
+        <p>BottleShip is a BattleShip game, in which you need to break all
+            the opponent's bottles which have been carelessly
+            left on the floor after a Friday's night party. </p>
+
+        <p>Good luck and don't litter!</p>
+    </div>
+
+    <section class="enter_name">
+
+        <input type="text" id="playerName" size="35" placeholder="Enter your name to get started" required>
+        <br>
+        <br>
+        <!--<input id="submitButton" type="submit" value="Start the game">-->
+        <form action="/play">
+            <!-- <button type="submit">PLAY</button> -->
+            <button type="submit">Start the game</button>
+        </form>
+        <!--<button id="submitButton" onclick="savePlayerName()">Start the game</button> -->
+    </section>
+
+
+</div>
+
+<footer>
+    <img src="images/splashPic.jpg">
+</footer>
+<!--experiment with sockets-->
+<main>
+    Status: <span id="hello"></span>
+</main>
+
+<script src="javascripts/splash.js"></script>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+</body>
+</html>

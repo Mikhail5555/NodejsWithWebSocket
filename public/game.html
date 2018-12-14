@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BottleShip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/game.css" />
+    
+    
+</head>
+<body>
+  <header>
+
+      <span id = "onlinePlayers" class="headerField">Players online: 7 </span>
+     
+      <span id = "yourSteps" class="headerField">Steps taken: 0</span>
+     
+      <span id = "recordSteps" class="headerField">All time record: 19 steps</span>
+      
+  </header>
+        
+
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+
+            <br>
+
+            <div class ="gameBoard" id="board1">
+            </div>
+                
+          </div>
+
+          
+          
+          <div class="column" style="background-color:#ccc;">
+
+            <!-- <div class ="gameBoard" id="board2">
+            </div> -->
+            
+            <button id="Button" onclick="startGame()">start the game</button>
+            <br>
+            <br>
+            <button id="Button" onclick="rotate()">Change Ship Rotation</button>
+      
+      <div id = "nextShip">Next ship's length is 5</div>
+      
+      <div id = "curRotation">Current rotation is: Horizontal</div>
+            
+            <br>
+    
+          </div>
+        </div>
+
+    
+    
+    <!-- <button id="myShipsButton" onclick="yourShips()">show my ships</button> -->
+    <script src="javascripts/game.js"></script>
+
+</body>
+</html>

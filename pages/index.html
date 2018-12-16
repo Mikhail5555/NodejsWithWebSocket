@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Express</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <script src="./javascripts/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+<h1>Express</h1>
+<p>Welcome to Express</p>
+</body>
+
+</html>
+<script>
+    var ws = new WebSocket('ws://localhost:3000/test');
+
+    ws.onopen = function () {
+        let message = {messageType: "connect"};
+        ws.send(JSON.stringify(message));
+    };
+
+    ws.onmessage = function (message) {
+        console.log(message);
+    }
+</script>

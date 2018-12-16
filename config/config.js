@@ -12,6 +12,12 @@ const config = {
     websocket: {
         timeInterval: 10000,
         logging: true
+    },
+    cookie: {
+        secret: "top_secret_bottleship_cookies"
+    },
+    database: {
+        fileLocation: __dirname + "/../database.json"
     }
 };
 
